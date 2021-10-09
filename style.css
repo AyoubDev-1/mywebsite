@@ -1,0 +1,290 @@
+ 
+    .nanigation{
+    position: sticky;
+    top: 0;
+    background-color:#b8096b;
+    /* margin-bottom: 20px; */
+    display: flex;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 9px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around ;
+    
+}
+.logo{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    background-color:#b8096b;
+    
+}
+.activenave{
+    color: #00b956 !important;
+}
+.logo a{
+    color: #df14c4c5;
+    text-decoration: none;
+    width: 10px;
+}
+.logo img{
+    height: 70px;
+    margin-right: 10px;
+}
+#langue{
+    margin-left: 13px;
+    margin-right: 13px;
+}
+#langue i{
+    margin-right: 5px;
+}
+.left-nav-items{
+    display:flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+}
+.nanigation a{
+    margin-left: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: cornflowerblue ;
+
+}
+
+@font-face {
+    font-family: sondos;
+    src: url(fonts/beIN\ Black\ .ttf);
+    }
+body{
+    /* background-image: url(imges/squid-game-saison-2-netflix.png);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    font-family: sondos;
+    margin: 0;
+    padding: 0;
+    /* cursor: url(imges/cursor.cur),auto;	 */
+}
+
+#only-mobile{
+    display: none;
+    color: rgb(30, 20, 87) !important;
+
+}
+.slider{
+    background-image: url(imges/AAAABZ2sIVr92spXMLzEuOdC4WQgIHRwAfGlIchnnAURwJzIOem2qk2yfbz5amA-nhBMW4n1lzwQukTijvAm_VbgERhQn_jm-2-1200x900.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 98.3vh;
+}
+.slider img{
+    width: 300px;
+    /* height: 500px; */
+    animation: slideranimation 1s linear infinite;
+}
+.section{
+    margin-bottom: 20px;
+    width: 100%;
+    min-height: 100vh;
+}
+.grid-2{
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    /* padding: 10px; */
+    align-items: center;
+    justify-content: space-around;
+}
+.grid-4{
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    /* padding: 10px; */
+    align-items: center;
+    justify-content: space-around;
+}
+.grid-2 button{
+    background-color: #00627d;
+    border: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+.grid-2 button a{
+    font-family: sondos;
+    color: wheat;
+    text-decoration: none;
+}
+p{
+    text-align: justify;
+}
+.bg-darkgreen{
+    background-color: darkcyan;
+}
+.ifram{
+    width: 40vw;
+    height: 64vh;
+    margin-top: 15px;
+    border-radius: 27px;
+}
+/* #secimg{
+    width: 300px;
+    height: 300px;
+} */
+/* aniamtion */
+@keyframes slideranimation {
+    
+    100%{
+        margin-top: 12px;
+
+    }
+}
+/* end css fotter */
+@media screen and (max-width: 800px) {
+    
+    .nanigation {
+        position: absolute;
+        /* padding: 10px 10px 25px; */
+        width: 100%;
+        top: 67px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background-color:#b8096b;
+        flex-direction: column;
+        text-decoration: none;
+        font-weight: bold;
+        
+    }
+    @keyframes ddd {
+        0%{
+            width: 0vh;
+        }
+        100%{
+            width: 80vw;
+        }
+    }
+    .show{
+        display: flex !important;
+    }
+    .hide{
+        display: none !important;
+    }
+    .nanigation a {
+        width: 92%;
+        background-color: rgb(22, 3, 3);
+        padding-top: 20px;
+        margin: 0;
+        color: rgb(247, 245, 245) !important;
+        padding-right: 10px;
+        border-radius: 20px;
+        padding-bottom: 20px;
+        margin-top: 0px;
+        margin-bottom: 26px;
+        animation: ddd 0.1s linear;
+    }
+    #only-mobile{
+        display: block;
+        color: blue;
+        font-size: 29px;
+        margin-left: 5px;
+    }
+    .info-text{
+        margin: 20px;
+        width: 100vw;
+    }
+    .info-content img{
+        width: 160px !important;
+        margin-top: 7px;
+    }
+    .win-info img{
+        width: 80vw;
+    }
+
+    /* ifram */
+    .grid-2{
+        display: grid;
+        grid-template-columns: 90vw;
+        /* padding: 10px; */
+        align-items: center;
+        justify-content: space-around;
+    }
+    .grid-4{
+        display: grid;
+        grid-template-columns: 90vw;
+        /* padding: 10px; */
+        align-items: center;
+        justify-content: space-around;
+    }
+    .ifram{
+        width: 90vw;
+        height: 50vh;
+        margin-top: 15px;
+        border-radius: 27px;
+    }
+  }
+
+
+
+
+
+
+
+  /* fotter css */
+  footer {
+    background-color: #b8096b;
+    width: auto;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navfotter {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+footer p {
+    margin: 0;
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+
+}
+
+.navfotter ul li {
+    list-style: none;
+}
+
+.navfotter ul li a {
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+}
+
+p{
+    align-items: center;
+    justify-content: space-between;
+}
+p img{
+    width: 51px;
+}
+
+p i{
+    text-align: center;
+    color: #00b956;
+}
+ 
